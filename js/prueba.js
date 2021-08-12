@@ -30,3 +30,34 @@ $(document).ready(function() {
         $("#adicionados").append(nFilas - 1);
     });
 });
+//Creamos una funcion para almacenar un diccionario
+
+guardar_productos()
+
+
+function guardar_productos() {
+    let producto = {
+        nom_producto: "Greñuda",
+        precio: 10000,
+        ingredientes: "Papas a la francesa, carne desmechada, queso, arepa, huevo codorniz"
+    }
+}
+//Declaramos una variable adicional llamada servicio
+let servicio = "Pedido"
+
+localStorage.setItem("servicio", JSON.stringify(guardar_productos))
+
+//declaramos variables para llamar por id
+const form = document.getElementById('form');
+const username = document.getElementById('username');
+const password = document.getElementById('password');
+//creamos funcion js para crear un array ser almacenado como string en local storage
+form.addEventListener('submit', function(event) {
+    event.preventDefault()
+    let users = Array({
+        usuario: username.value,
+        clave: password.value
+    })
+    localStorage.setItem('user', JSON.stringify(users))
+    location.href = 'galeria.html'
+})
