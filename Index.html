@@ -23,6 +23,8 @@
 
     <!-- Custom stylesheet -->
     <link rel="stylesheet" href="css/custom.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 
     <!--[if lt IE 9]>
                 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -66,7 +68,7 @@
 
             <!-- Start Header Navigation -->
             <div class="navbar-header">
-                <a class="navbar-brand" href="#"><img src="./images/logonata.JPG" class="logo" alt=""></a>
+                <a class="navbar-brand" href="#"><img id="logo" src="./images/logonata.JPG" class="logo" alt=""></a>
             </div>
             <!-- End Header Navigation -->
         </div>
@@ -393,7 +395,7 @@
                                 <div class="input-group">
                                     <input type="email" class="form-control" id="em" placeholder="Ingresa tu correo aquí">
                                     <span class="input-group-btn">
-                                            <button type="submit" class="btn send_btn">
+                                            <button type="submit" class="btn send_btn" id="enviar">
                                                 <i class="glyphicon glyphicon-send"></i>
                                             </button>
                                         </span>
@@ -435,8 +437,8 @@
 
                         <div class="footer-copyright">
                             <p class="wow fadeInRight" data-wow-duration="1s">
-                                Made with
-                                <i class="fa fa-heart"></i> by
+                                Hecho con
+                                <i class="fa fa-heart"></i> por
                                 <a target="_blank" href="https://danielfelipeagmo.github.io/Factsoft_Agudelo/HTML5/Index.html">Factsoft D</a> <br /> 2021. All Rights Reserved
                             </p>
                         </div>
@@ -465,11 +467,11 @@
     <!-- JS Implementing Plugins -->
 
 
-    <script type="text/javascript">
-    </script>
+    <script type="text/javascript"></script>
 
 
     <!--main js-->
+    <script type="text/javascript" src="js/prueba.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src=""></script>
 </body>

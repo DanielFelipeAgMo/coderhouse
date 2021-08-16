@@ -61,3 +61,21 @@ form.addEventListener('submit', function(event) {
     localStorage.setItem('user', JSON.stringify(users))
     location.href = 'galeria.html'
 })
+
+//Aplicando animaciones con Jquery
+$(document).ready(function() {
+    $('a.img').on('click', function() {
+        $('.logo').animate({ width: '+=100px' })
+        $('.logo').animate({ width: '-=100px' })
+
+    })
+})
+
+//aplicando ajax
+$(document).ready(function() {
+    $("#enviar").click(function(datos) {
+        $.post('respuesta.php', function() {
+            $(alert("Gracias por suscribirse"))
+        })
+    })
+})
