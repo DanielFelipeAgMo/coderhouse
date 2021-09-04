@@ -7,9 +7,38 @@ body {
     line-height: 18px;
     font-family: 'Maitree', serif;
     color: #fff;
-    background: #efe9dd;
+    background: #080808;
 }
 /*Preloader css*/
+
+#lista1{
+    background-color: #000;
+}
+
+#Resultado{
+    background-color: #000;
+}
+
+#controles{
+    background-color: #000;
+}
+
+#lista2{
+    background-color: #000;
+}
+.card{
+    background-color: #000;
+}
+#total{
+    background-color: #66afe9;
+}
+#volver{
+    border: #D1B980;
+    color: rgb(243, 20, 20);
+}
+.modal-content{
+    background-color: #e9e516;
+}
 
 #loading{
     background-color: #d14149;
